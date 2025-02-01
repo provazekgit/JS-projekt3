@@ -1,0 +1,257 @@
+/* promenné barvy fonty atd */
+:root {
+  --color-light: #fff;
+  --color-dark: #000;
+  --overlay-color: rgba(255, 255, 255, 0.2); /* Bílá s 50% průhledností */
+  --color-body: #B2A5FF;
+  --color-footer: #493D9E;
+  --color-button-text: #FFF2AF;
+  --color-button-border: #DAD2FF;
+  --game-background: hsla(0, 0%, 100%, 0.2);
+  --canvas-background: rgb(190, 190, 190);
+  --canvas-background-sv: rgb(220, 220, 220);
+  --border-color: #808080;
+  --text-color: #333;
+  -text-color-tm: #000;
+  --font-sans: 'Poppins', 'Inter', Arial, sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+  
+}
+body{
+  background: var(--color-body);
+  font-family: var(--font-sans);
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+/* header navigace */
+header nav ul{
+  margin: 0px 0px 30px 0px;
+  padding: 20px;
+  color: var(--color-button-text);
+  background-color: var(--color-footer);
+  
+}
+nav ul li{
+  list-style: none;
+  padding-left: 20px;
+  display:inline-block;
+  color: var(--color-button-text);
+}
+nav ul li i{
+  padding:5px;
+  font-size: 12px;
+}
+nav ul li a{
+  color: var(--color-button-text);
+  font-size: 15px;
+  text-decoration: none;
+}
+nav ul li a:hover, .nav ul li a:active{
+  color: var(--color-light);
+}
+/* transformace navigace */
+.nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor; /* Použije barvu textu */
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+  left: 0;
+}
+/* geme.html + general */
+section.hra, section#trowAgain, section#about-app{
+  background-color: var(--game-background);
+  padding: 30px;
+  max-width: 80vw;
+  text-align:center;
+  margin: 5px auto;
+  border-radius: 20px;
+}
+canvas {
+   margin: 10px 0;
+   border-radius: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--color-light);
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  border-radius: 50px;
+  background-color: var(--color-footer);
+  margin: 10px;
+}
+button a{
+  color: var(--color-light);
+}
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  color: var(--text-color);
+}
+canvas#diceCanvas{
+  background-color: var(--canvas-background);
+  border: 2px solid var(--border-color);
+}
+#trowAgain button{
+  color: var(--color-button-text);
+  background-color: var(--color-footer);
+  width:180px;
+  height: 45px;
+  font-family: var(--font-sans);
+  font-weight: 900;
+  font-size:80%;
+  border-radius: 50px;
+}
+#nextPlayer, #trowAgain button{
+  font-family: var(--font-sans);
+  font-weight: 600;
+  box-shadow: none;
+  margin:20px;
+  color: var(--color-light);
+}
+#nextPlayer{
+  color: var(--color-light);
+  width:240px;
+  height: 55px;
+  background-color: var(--color-footer);
+  border-radius: 50px;
+  font-weight: 600;
+}
+/* index.html */
+section.uvod{
+  max-width: 80vw;
+  margin: 30px auto;
+  background: var(--overlay-color);
+  border-radius: 20px;
+  padding: 30px 10px;
+}
+div.selection{
+  margin:20px;
+  border: 2px solid var(--color-button-border);
+  border-radius: 20px;
+  padding:20px;
+}
+input, select{
+  border:2px solid var(--color-button-border);
+  border-radius: 50px;
+  padding:9px;
+  max-width:160px;
+  font-size: 12px;
+  text-align: center;
+}
+/* players.html */
+#playerList{
+  max-width: 80vw;
+  margin: 5px auto;
+  text-align: center;
+  background-color: var(--overlay-color);
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#playerList div.player-card{
+  border: 2px solid var(--border-color);
+  background-color: var(--color-light);
+  border: 3px solid var(--border-color);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  min-width: 150px;
+  text-align: center;
+}
+.player-info{
+  font-size: 8px;
+}
+.player-info strong{
+  font-size: 15px;
+}
+.player-name {
+  font-weight: bold;
+  color: var(--color-button-text);
+  font-variant: small-caps;
+  text-transform: capitalize;
+  font-size: 120%;
+}
+#playerList .player-name{
+  color: var(--color-footer);
+  font-size: 150%;
+}
+.player-colors {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.player-color-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid var(--text-color-tm);
+}
+/* info.html */
+section.rules{
+  max-width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 5px;
+  justify-items: center;
+
+}
+section.rules div{
+  background-color: var(--game-background);
+  padding: 20px;
+  max-width: 400px;
+  text-align: left;
+  margin: 5px auto;
+  border-radius: 20px;
+}
+section.rules div h2{
+  width: 100%;
+  text-align: center;
+}
+/* footer */
+footer{
+  background: var(--color-footer);
+  color:var(--color-button-text);
+  margin: 40px 0px 0px 0px;
+}
+footer a, footer a i{
+  color:var(--color-button-text);
+  padding: 15px 15px;
+  display: inline-block; /* Potřebné pro transformace */
+  font-size: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+footer a:hover, footer a i:hover, footer a:active, footer a i:active{
+  color: var(--color-light);
+  transform: scale(1.2);
+}

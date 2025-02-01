@@ -1,0 +1,54 @@
+
+.menu-icon {
+    display: none;
+    }
+@media (min-width: 600px){
+        header nav {
+        display: block !important;     /* JS menu */  
+    } 
+}
+    
+@media (max-width: 600px) {
+    header {
+        position: relative;
+    }
+
+    .menu-icon {
+        display: block;
+        color: var(--color-button-text);
+        font-size: 40px;
+        cursor: pointer; /* Přidá klikací efekt */
+        padding: 10px;
+        background-color: var(--color-footer);
+    }
+
+    header nav {
+        display: none; /* Skrýt menu na začátku */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #15304c;
+        width: 100%;
+        z-index: 1000;
+        transition: all 0.5s ease-in-out; /* Přidána animace pro plynulé zobrazení */
+    }
+
+    header nav ul {
+        list-style: none;
+        padding: 10px;
+    }
+
+    header nav li {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Animace pro zobrazení menu */
+    header nav.show {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
