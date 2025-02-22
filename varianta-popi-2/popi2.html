@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Karel Provázek -->
+  <!-- provazek@24s.cz -->
+  <!-- provazek24s.cz_84357 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="var.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css">
+    <script src="https://kit.fontawesome.com/fb1968bafd.js" crossorigin="anonymous"></script>
+    <title>POPI</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a title="POPI 2" href="index.html"><img src="img/popi-logo3.png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Popi 1</a></li>
+                <li><a href="popi2.html">Popi 2</a></li>
+                <li><a href="popi3.html">Popi 3</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+        <div class="switcher-box">
+            <span class="switcher-description">
+                <p>Light Mode</p>
+                <i class="fa-regular fa-sun"></i>
+            </span>
+            <!-- Rounded switch -->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="image-section">
+            <div class="image-container">
+                <img src="img/obrazek4.jpg" alt="Obrázek 4">
+            </div>
+            <div class="image-container">
+                <img src="img/obrazek5.jpg" alt="Obrázek 5">
+            </div>
+            <div class="image-container">
+                <img src="img/obrazek6.jpg" alt="Obrázek 6">
+            </div>
+        </section>
+
+        <section class="welcome">
+            <div class="overlay1">
+                <h1>Trollové: Světové turné (2020)</h1>
+                <p>Trollové: Světové turné (Trolls World Tour) je pokračováním úspěšného animovaného filmu Trollové z roku 2016. V tomto díle se královna Poppy a její přítel Větvík dozvídají, že jejich popový kmen není jediným druhem trollů na světě. Objevují existenci dalších kmenů, z nichž každý reprezentuje jiný hudební žánr, jako je techno, funk, country, klasická hudba a rock.</p>
+                <p>Tuto rozmanitost však ohrožuje královna Bárbra z rockového kmene, která plánuje sjednotit všechny trolly pod vládou rocku. Poppy a Větvík se vydávají na dobrodružnou cestu napříč různými hudebními světy, aby zabránili rockové nadvládě a zachovali hudební rozmanitost. Film opět nabízí pestrou paletu písní a tanečních čísel, která osloví diváky všech věkových kategorií.
+            </p>
+            </div>
+            <div class="overlay2">
+                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/yP86-TR6IME?si=6SFnC8YUlMmOopir" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+                <p><img alt="popi" src="img/popi-foto2.png" title="Popi"></p>
+            </div>
+        </section>
+
+        <section class="form">
+            <h1>Kontaktní Formulář</h1>
+            <p class="notificationName">Vyplňte prosím jméno a příjmení!</p>
+            <p class="notificationEmail">Vyplňte prosím email!</p>
+            <p class="notificationMessage">Vyplňte prosím zprávu!</p>
+            
+                <form>
+                    <input type="text" placeholder="Jméno a příjmení *" class="fullName"><br>
+                    <input type="email" placeholder="Email *" class="email"><br>
+                    <input type="tel" placeholder="Telefon" class="tel"><br>
+                    <textarea placeholder="Vaše zpráva *" class="message"></textarea><br>
+                    <input type="submit" value="Odeslat">
+                </form>
+                <p class="notificationSuccess" style="display:none; color: green;">Formulář byl ověřen!</p>
+
+        </section>
+            
+    </main>
+
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet.... </p> 
+        <p><button id="scrollToTop" class="scroll-to-top"><i class="fa-solid fa-turn-up"></i></button></p>
+    </footer>
+   
+    <script src="script.js" defer></script>
+</body>
+</html>

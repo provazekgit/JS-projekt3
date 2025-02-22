@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Karel Provázek -->
+  <!-- provazek@24s.cz -->
+  <!-- provazek24s.cz_84357 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="var.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css">
+    <script src="https://kit.fontawesome.com/fb1968bafd.js" crossorigin="anonymous"></script>
+    <title>POPI</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a title="POPI 1" href="index.html"><img src="img/popi-logo3.png" alt="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Popi 1</a></li>
+                <li><a href="popi2.html">Popi 2</a></li>
+                <li><a href="popi3.html">Popi 3</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+        <div class="switcher-box">
+            <span class="switcher-description">
+                <p>Ligth Mode</p>
+                <i class="fa-regular fa-sun"></i>
+                <!-- <i class="fa-solid fa-moon"></i> -->
+            </span>
+            <!-- Rounded switch -->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="image-section">
+            <div class="image-container">
+                <img src="img/obrazek1.jpg" alt="Obrázek 1">
+            </div>
+            <div class="image-container">
+                <img src="img/obrazek2.jpg" alt="Obrázek 2">
+            </div>
+            <div class="image-container">
+                <img src="img/obrazek3.jpg" alt="Obrázek 3">
+            </div>
+        </section>
+
+        <section class="welcome">
+            <div class="overlay1">
+                <h1>Film Trollové (2016)</h1>
+                <p>Film Trollové (Trolls) z roku 2016 je animovaná muzikálová komedie od studia DreamWorks Animation, známého také díky sérii Shrek. Příběh nás zavádí do pestrobarevného světa Trollů, malých bytostí plných optimismu, které milují zpěv, tanec a objímání. Jejich opakem jsou Bergeni, tvorové přesvědčení, že štěstí dosáhnou pouze konzumací Trollů.
+                </p><p>
+                    Hlavní hrdinkou je princezna Poppy, nejšťastnější Trollka vůbec, která se spolu s opatrným a mrzutým Větvíkem vydává na dobrodružnou výpravu za záchranou svých přátel unesených Bergeny. Během cesty oba překonávají své rozdíly a učí se spolupracovat, aby dosáhli společného cíle.
+                </p><p>
+                    Film je plný chytlavých písní a tanečních čísel, které doplňují jeho veselou atmosféru. Hlavní postavy v originále namluvili Anna Kendrick (Poppy) a Justin Timberlake (Větvík). Snímek získal pozitivní ohlasy za svou animaci, hudbu a humor, a byl nominován na Oscara za nejlepší původní píseň "Can't Stop the Feeling!" 
+                    EN.WIKIPEDIA.ORG
+                    .
+                </p>
+            </div>
+            <div class="overlay2">
+                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/xyjm5VQ11TQ?si=mnBjbIWlllXXlUQv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </p><img alt="popi" src="img/popi-foto.png" title="Popi">
+            </div>
+        </section>
+            
+        <section class="form">
+            <h1>Přihlašovací formulář</h1>
+            
+            <!-- Notifikace chyb pro validaci formuláře -->
+            <p class="notificationName">Vyplňte prosím jméno!</p>
+            <p class="notificationEmail">Vyplňte prosím platný email!</p>
+            <p class="notificationPassword">Vyplňte prosím heslo!</p>
+            <p class="notificationConfirmPassword">Hesla se neshodují!</p>
+            
+            <!-- Formulář pro přihlášení -->
+            <form>
+                <input type="text" placeholder="Jméno *" class="fullName" required><br>
+                <input type="email" placeholder="Email *" class="email" required><br>
+                <input type="password" placeholder="Heslo *" class="password" required><br>
+                <input type="password" placeholder="Potvrďte heslo *" class="confirmPassword" required><br>
+                <input type="submit" value="Přihlásit se">
+            </form>
+            <p class="notificationSuccess" style="display:none; color: green;">Formulář byl ověřen!</p>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet.... </p> 
+        <p><button id="scrollToTop" class="scroll-to-top"><i class="fa-solid fa-turn-up"></i></button></p>
+    </footer>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+
+@media (max-width: 1200px){
+    .welcome h1{
+        font-size:25px;
+    }
+    .welcome {
+        flex-direction: column; /* Na malých obrazovkách zobrazí divy pod sebou */
+      }
+}
+
+@media (max-width: 765px) {
+    header {
+        position: relative;
+    }
+    header nav {
+        /* display: none; */
+        position: absolute;
+        top: 136px;
+        background-color: #F67102;
+        width: 100%;
+        border: 2px solid #00A7A4;
+    }
+
+    header nav {
+        display: none;  /*dopnili jsme */
+        position: absolute;
+        top: 136px;
+        background-color: var(--header-backcolor);
+        width: 100%;
+        border: 2px solid  var(--text-color);
+    }
+
+    header nav li {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        color: var(--text-color);
+        font-size: 40px;
+    }
+
+    .image-container {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    header .logo a img{
+        max-width: 250px;
+    }
+    iframe {
+        width: 400px;
+    }
+    .switcher-description{
+        display: none;
+    }
+
+   
+}
+
+@media (min-width: 765px){
+    header nav {
+        display: block !important;     /* JS menu */  
+    } 
+}
+
+@media (max-width: 400px){
+    .logo img {
+        width: 200px;
+        margin-left: 10px;
+    }
+    .welcome h1{
+        font-size:25px;
+    }
+    header{
+        height: 86px;
+    }
+
+    header nav {
+        /* display: none; */
+        position: absolute;
+        top: 86px;
+    }
+    header .logo a img{
+        max-width: 150px;
+    }
+    iframe {
+        width: 280px;
+    }
+    
+}
